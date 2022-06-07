@@ -55,16 +55,93 @@ EX2.input(EX3.output());
 ```
 A noteworthy point here is that after the swap, the data needs to be accessed by the operators. This is arranged by the operator leaving its input and output pointers to the executer object and let it connect the pointer to right data address.
 
-The framework is implemented in three header files:
-1. `src/hpp/operator.hpp` is implementing templates for a source, a sink and an operator
-2. `src/hpp/opsexecuter.hpp` has the implementation of executers that host a number of operators
-3. `src/hpp/uniquebuffer.hpp` has the implementation of the unique buffer as explained above.
+# Details of file and code structure
+The figure above, although simple, it presents the structure of the code quite sccurately, except one point that is not shown. A chain of operators, as well as their wrappers, have always a start and an end. The elements in the middle need to have both input and output, while the start element, source will only have an output and the end element, the sink, has only input.
 
-The functionality of the platform is tested using googletest. The operators are defined in `test/classdefs.hpp` and the test cases in `test/test_complete.cpp`. There are 8 detailed test cases, but somewhat boring, as the operators are too simple.
+The importand output of the project is the framework that allows setting up a multithreaded pipeline of smaller operators. It is efficient both in terms of execution and memory usage. The framework is implemented as a number of  class templates, divided in three header files:
+1. `src/hpp/operator.hpp` is implementing templates for a source, a sink and an operator, all of them being drived from the same base class. Having the same base class allows execution of the respective operation, regardless the exact types of data bassing through the operators. The only different between the three classes is whether they have both input and output, or only one of them.
+2. `src/hpp/opsexecuter.hpp` has the implementation of operattors' executers that host a number of operators, connects them to the world outside and executes their operation. Similar to the operators, executers are drived from the same base class, which implements the common parts. The difference between the three classes is only input and output configuration.
+3. `src/hpp/uniquebuffer.hpp` has the implementation of the unique buffer as explained above. It allows exchange of data between two threads in a controlled manner, without risk for data race.
+
+To use the platform, first the data structures used through the pipeline should be. Thereafter, the data types should be used as arguments for generation of valid classes. These data structured define all interfaces between the operators and executers.
+
+Once domain specific classes are defined, objects can be defined to build the complete pipeline. They should be wired together so that the data can flow between them. This has been done with simple mathematical operators as test for the platform and also by wrapping opencv operators in one of tutorials.
+
+The functionality of the platform is tested using googletest. The operators are defined in `test/classdefs.hpp` and the test cases in `test/test_complete.cpp`. There are 8 detailed test cases that prove the system works properly.
 
 To have a more interesting, or maybe so called real life test case, I took a simple case of opencv and implemented in a set of operators. Here, you have the original [opencv tutorial](https://docs.opencv.org/3.4/db/d28/tutorial_cascade_classifier.html), and the modified version, in `cascade_classifier_singlethread.cpp`. It took me about two hours to convert it to a code that I ran on three threads, basically because of mistakes and time that was needed to debug it.
 
+A walkthrough of `cascade_classifier_multithread.cpp` illustrates the mention steps well. First, a data structure is defined that allows transfer of relevant information through the pipeline:
+
+```
+struct ImageData
+{
+    filesystem::path destinationFile;
+    Mat frame;
+};
+```
+With the data structure defined, we can use that as template arguments and drive the classes. Three classes, `CVFileReaderOp`,  `CVFileWriterOp` and  `CVDetector` are defineing the operations we need. Lines 30 to 114 are the definitions and then steps 1 to 9 between lines 230 and 276 show the process described in words above.
+
 The code has lots of comment. With the above explanation you will be able to understand what I have been trying to do.
+
+# Project rubrik
+## README 
+The problem and solution idea are presented. The code architecture is described in details, including the file structure. Rubrik points are presented and reference given.
+## Compiling and Testing 
+Cmake and make are used for build anf googletest for unit testing. The programs and tests compile and run without warnings or errors.
+## Loops, Functions, I/O
+All points are accounted for. See lines 140 to 230 in `cascade_classifier_multithread.cpp`. 
+## Object Oriented Programming
+All points are accounted for. See for example class template `OperatorExecuter` line 168 in `src/hpp/opsexecuter.hpp` and forward.
+## Memory Management
+A specific goal of the project was to use as little memory as possible and avoid memory allocation or copying. This has been achieved by use of smart pointers and allowing work with same resources whereever possible.
+Destructor of the BaseExecuter class joins the threads, line 75 in `src/hpp/opsexecuter.hpp`. The project uses swap between unique pointer to avoid copying or allocating data. See lines 49 abd 64 in `src/hpp/uniquebuffer.hpp`. Smart pointers are extensively used. For example see input and output methods in class template `OperatorExecuter` line 168 in `src/hpp/opsexecuter.hpp` and forward.
+## Concurrency
+Concurrancy is the core of the project and different aspects are accounted for. The evidences can be found in `src/hpp/opsexecuter.hpp` and `src/hpp/uniquebuffer.hpp`, where the basis for multithread implementation is implemented. Mutex and lock, as well as condition variables can simplest be found in `src/hpp/uniquebuffer.hpp`. Promise and future are used to discover that a thread has complete its work.
+
+# Repository and file structure
+
+```console
+├── CMakeLists.txt
+├── README.md
+├── imgs
+│   ├── 14_modified.jpg
+│   └── threads.png
+├── input_files
+│   ├── 01.jpg
+│   ├  .......
+│   ├── 15.jpg
+│   └── haarcascades
+│       ├── haarcascade_eye_tree_eyeglasses.xml
+│       └── haarcascade_frontalface_alt.xml
+├── outputs
+│   ├── multithread_output
+│   │   ├── cascade_classifier_multithread.log
+│   │   ├── test_core.log
+│   │   ├── test_core_valgrind.log
+│   │   └── your_last_processed_images_multithread
+│   │       ├── 01_modified.jpg
+│   │       ├   .............
+│   │       └── 15_modified.jpg
+│   └── singlethread_output
+│       └── your_last_processed_images_singlethread
+│           ├── 01_modified.jpg
+│           ├   .............
+│           └── 15_modified.jpg
+├── src
+│   ├── cpp
+│   │   ├── cascade_classifier_multithread.cpp
+│   │   └── cascade_classifier_singlethread.cpp
+│   └── hpp
+│       ├── operator.hpp
+│       ├── opsexecuter.hpp
+│       └── uniquebuffer.hpp
+└── test
+    ├── classdefs.hpp
+    └── test_complete.cpp
+
+12 directories, 64 files
+```
 
 # How to run the program
 Firstly, I need to inform that the code has been tested on WSL2/Ubuntu 20.4. I tried to make the camera work, but failed. That is the reason I have changed the code to reading from files and writing on files.
