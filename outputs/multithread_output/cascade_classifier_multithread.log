@@ -1,0 +1,690 @@
+16 files will be processed.
+0) "../input_files/09.jpg" -> "./your_last_processed_images_multithread/09_modified.jpg"
+1) "../input_files/14.jpg" -> "./your_last_processed_images_multithread/14_modified.jpg"
+2) "../input_files/03.jpg" -> "./your_last_processed_images_multithread/03_modified.jpg"
+3) "../input_files/02.jpg" -> "./your_last_processed_images_multithread/02_modified.jpg"
+4) "../input_files/10.jpg" -> "./your_last_processed_images_multithread/10_modified.jpg"
+5) "../input_files/01.jpg" -> "./your_last_processed_images_multithread/01_modified.jpg"
+6) "../input_files/07.jpg" -> "./your_last_processed_images_multithread/07_modified.jpg"
+7) "../input_files/05.jpg" -> "./your_last_processed_images_multithread/05_modified.jpg"
+8) "../input_files/04.jpg" -> "./your_last_processed_images_multithread/04_modified.jpg"
+9) "../input_files/06.jpg" -> "./your_last_processed_images_multithread/06_modified.jpg"
+10) "../input_files/12.jpg" -> "./your_last_processed_images_multithread/12_modified.jpg"
+11) "../input_files/15.jpg" -> "./your_last_processed_images_multithread/15_modified.jpg"
+12) "../input_files/13.jpg" -> "./your_last_processed_images_multithread/13_modified.jpg"
+13) "../input_files/09.png" -> "./your_last_processed_images_multithread/09_modified.png"
+14) "../input_files/08.jpg" -> "./your_last_processed_images_multithread/08_modified.jpg"
+15) "../input_files/11.jpeg" -> "./your_last_processed_images_multithread/11_modified.jpeg"
+The destination path exists with 16 files.
+1) "./your_last_processed_images_multithread/01_modified.jpg" will be replaced.
+2) "./your_last_processed_images_multithread/15_modified.jpg" will be replaced.
+3) "./your_last_processed_images_multithread/05_modified.jpg" will be replaced.
+4) "./your_last_processed_images_multithread/10_modified.jpg" will be replaced.
+5) "./your_last_processed_images_multithread/06_modified.jpg" will be replaced.
+6) "./your_last_processed_images_multithread/13_modified.jpg" will be replaced.
+7) "./your_last_processed_images_multithread/09_modified.png" will be replaced.
+8) "./your_last_processed_images_multithread/09_modified.jpg" will be replaced.
+9) "./your_last_processed_images_multithread/07_modified.jpg" will be replaced.
+10) "./your_last_processed_images_multithread/04_modified.jpg" will be replaced.
+11) "./your_last_processed_images_multithread/02_modified.jpg" will be replaced.
+12) "./your_last_processed_images_multithread/08_modified.jpg" will be replaced.
+13) "./your_last_processed_images_multithread/03_modified.jpg" will be replaced.
+14) "./your_last_processed_images_multithread/14_modified.jpg" will be replaced.
+15) "./your_last_processed_images_multithread/12_modified.jpg" will be replaced.
+16) "./your_last_processed_images_multithread/11_modified.jpeg" will be replaced.
+./your_last_processed_images_multithread/ will be used for output files.
+
+
+
+If you are fine with processing of the file as described above, respond with Yes or yes! 
+
+>> You answered 'yes'.
+
+
+
+Start processing...
+
+
+ **) The address of output pointer requested from  - Op_filieReader   
+ **) The address of input pointer requested from  - FaceDetector   
+ **) The address of output pointer requested from  - FaceDetector   
+ **) The address of input pointer requested from  - Op_filieWriter   
+ **) Execution mode command sent to - ReaderThread   
+ **) Execution mode command sent to - DetectorThread   
+ **) Execution mode command sent to - WriterThread   
+ **) Starting the thread  - ReaderThread   
+ **) Starting the thread  - DetectorThread   
+ **) Starting the thread  - WriterThread   
+ 01) Loop starts  - DetectorThread   
+ 03) Loop resumed  - DetectorThread   
+ 04) Reading the input  - DetectorThread   
+ **) Waiting for refreshed data from - ReaderThread_output_buffer   
+ **) Waiting for ending  - ReaderThread   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ 01) Loop starts  - ReaderThread   
+ 03) Loop resumed  - ReaderThread   
+ 06) Setting the output  - ReaderThread   
+ **) Waiting for the buffer to become available - ReaderThread_output_buffer   
+ **) Buffer is available and data can now be swaped at - ReaderThread_output_buffer   
+ 01) Loop starts  - ReaderThread   
+ 03) Loop resumed  - ReaderThread   
+ **) New data has arrived and now, the data can now be swaped at - ReaderThread_output_buffer   
+ 06) Setting the output  - ReaderThread   
+ **) Waiting for the buffer to become available - ReaderThread_output_buffer   
+ **) Buffer is available and data can now be swaped at - ReaderThread_output_buffer   
+ 01) Loop starts  - ReaderThread   
+ 03) Loop resumed  - ReaderThread   
+ 06) Setting the output  - ReaderThread   
+ **) Waiting for the buffer to become available - ReaderThread_output_buffer   
+ 06) Setting the output  - DetectorThread   
+ **) Waiting for the buffer to become available - DetectorThread_output_buffer   
+ **) Buffer is available and data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - DetectorThread   
+ 03) Loop resumed  - DetectorThread   
+ 04) Reading the input  - DetectorThread   
+ **) Waiting for refreshed data from - ReaderThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - ReaderThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ **) Buffer is available and data can now be swaped at - ReaderThread_output_buffer   
+ 01) Loop starts  - ReaderThread   
+ 03) Loop resumed  - ReaderThread   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ 06) Setting the output  - ReaderThread   
+ **) Waiting for the buffer to become available - ReaderThread_output_buffer   
+ 06) Setting the output  - DetectorThread   
+ **) Waiting for the buffer to become available - DetectorThread_output_buffer   
+ **) Buffer is available and data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - DetectorThread   
+ 03) Loop resumed  - DetectorThread   
+ 04) Reading the input  - DetectorThread   
+ **) Waiting for refreshed data from - ReaderThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - ReaderThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ **) Buffer is available and data can now be swaped at - ReaderThread_output_buffer   
+ 01) Loop starts  - ReaderThread   
+ 03) Loop resumed  - ReaderThread   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ 06) Setting the output  - ReaderThread   
+ **) Waiting for the buffer to become available - ReaderThread_output_buffer   
+ 06) Setting the output  - DetectorThread   
+ **) Waiting for the buffer to become available - DetectorThread_output_buffer   
+ **) Buffer is available and data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - DetectorThread   
+ 03) Loop resumed  - DetectorThread   
+ 04) Reading the input  - DetectorThread   
+ **) Waiting for refreshed data from - ReaderThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - ReaderThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ **) Buffer is available and data can now be swaped at - ReaderThread_output_buffer   
+ 01) Loop starts  - ReaderThread   
+ 03) Loop resumed  - ReaderThread   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ 06) Setting the output  - ReaderThread   
+ **) Waiting for the buffer to become available - ReaderThread_output_buffer   
+ 06) Setting the output  - DetectorThread   
+ **) Waiting for the buffer to become available - DetectorThread_output_buffer   
+ **) Buffer is available and data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - DetectorThread   
+ 03) Loop resumed  - DetectorThread   
+ 04) Reading the input  - DetectorThread   
+ **) Waiting for refreshed data from - ReaderThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - ReaderThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ **) Buffer is available and data can now be swaped at - ReaderThread_output_buffer   
+ 01) Loop starts  - ReaderThread   
+ 03) Loop resumed  - ReaderThread   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ 06) Setting the output  - ReaderThread   
+ **) Waiting for the buffer to become available - ReaderThread_output_buffer   
+ 06) Setting the output  - DetectorThread   
+ **) Waiting for the buffer to become available - DetectorThread_output_buffer   
+ **) Buffer is available and data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - DetectorThread   
+ 03) Loop resumed  - DetectorThread   
+ 04) Reading the input  - DetectorThread   
+ **) Waiting for refreshed data from - ReaderThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - ReaderThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ **) Buffer is available and data can now be swaped at - ReaderThread_output_buffer   
+ 01) Loop starts  - ReaderThread   
+ 03) Loop resumed  - ReaderThread   
+ 06) Setting the output  - ReaderThread   
+ **) Waiting for the buffer to become available - ReaderThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ 06) Setting the output  - DetectorThread   
+ **) Waiting for the buffer to become available - DetectorThread_output_buffer   
+ **) Buffer is available and data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - DetectorThread   
+ 03) Loop resumed  - DetectorThread   
+ 04) Reading the input  - DetectorThread   
+ **) Waiting for refreshed data from - ReaderThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - ReaderThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ **) Buffer is available and data can now be swaped at - ReaderThread_output_buffer   
+ 01) Loop starts  - ReaderThread   
+ 03) Loop resumed  - ReaderThread   
+ 06) Setting the output  - ReaderThread   
+ **) Waiting for the buffer to become available - ReaderThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ 06) Setting the output  - DetectorThread   
+ **) Waiting for the buffer to become available - DetectorThread_output_buffer   
+ **) Buffer is available and data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - DetectorThread   
+ 03) Loop resumed  - DetectorThread   
+ 04) Reading the input  - DetectorThread   
+ **) Waiting for refreshed data from - ReaderThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - ReaderThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ **) Buffer is available and data can now be swaped at - ReaderThread_output_buffer   
+ 01) Loop starts  - ReaderThread   
+ 03) Loop resumed  - ReaderThread   
+ 06) Setting the output  - ReaderThread   
+ **) Waiting for the buffer to become available - ReaderThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ 06) Setting the output  - DetectorThread   
+ **) Waiting for the buffer to become available - DetectorThread_output_buffer   
+ **) Buffer is available and data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - DetectorThread   
+ 03) Loop resumed  - DetectorThread   
+ 04) Reading the input  - DetectorThread   
+ **) Waiting for refreshed data from - ReaderThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - ReaderThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ **) Buffer is available and data can now be swaped at - ReaderThread_output_buffer   
+ 01) Loop starts  - ReaderThread   
+ 03) Loop resumed  - ReaderThread   
+ 06) Setting the output  - ReaderThread   
+ **) Waiting for the buffer to become available - ReaderThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ 06) Setting the output  - DetectorThread   
+ **) Waiting for the buffer to become available - DetectorThread_output_buffer   
+ **) Buffer is available and data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - DetectorThread   
+ 03) Loop resumed  - DetectorThread   
+ 04) Reading the input  - DetectorThread   
+ **) Waiting for refreshed data from - ReaderThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - ReaderThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ **) Buffer is available and data can now be swaped at - ReaderThread_output_buffer   
+ 01) Loop starts  - ReaderThread   
+ 03) Loop resumed  - ReaderThread   
+ 06) Setting the output  - ReaderThread   
+ **) Waiting for the buffer to become available - ReaderThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ 06) Setting the output  - DetectorThread   
+ **) Waiting for the buffer to become available - DetectorThread_output_buffer   
+ **) Buffer is available and data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - DetectorThread   
+ 03) Loop resumed  - DetectorThread   
+ 04) Reading the input  - DetectorThread   
+ **) Waiting for refreshed data from - ReaderThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - ReaderThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ **) Buffer is available and data can now be swaped at - ReaderThread_output_buffer   
+ 01) Loop starts  - ReaderThread   
+ 03) Loop resumed  - ReaderThread   
+ 06) Setting the output  - ReaderThread   
+ **) Waiting for the buffer to become available - ReaderThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ 06) Setting the output  - DetectorThread   
+ **) Waiting for the buffer to become available - DetectorThread_output_buffer   
+ **) Buffer is available and data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - DetectorThread   
+ 03) Loop resumed  - DetectorThread   
+ 04) Reading the input  - DetectorThread   
+ **) Waiting for refreshed data from - ReaderThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - ReaderThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ **) Buffer is available and data can now be swaped at - ReaderThread_output_buffer   
+ 01) Loop starts  - ReaderThread   
+ 03) Loop resumed  - ReaderThread   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ 06) Setting the output  - ReaderThread   
+ **) Waiting for the buffer to become available - ReaderThread_output_buffer   
+ 06) Setting the output  - DetectorThread   
+ **) Waiting for the buffer to become available - DetectorThread_output_buffer   
+ **) Buffer is available and data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - DetectorThread   
+ 03) Loop resumed  - DetectorThread   
+ 04) Reading the input  - DetectorThread   
+ **) Waiting for refreshed data from - ReaderThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - ReaderThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ **) Buffer is available and data can now be swaped at - ReaderThread_output_buffer   
+ 01) Loop starts  - ReaderThread   
+ 03) Loop resumed  - ReaderThread   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ 06) Setting the output  - ReaderThread   
+ **) Waiting for the buffer to become available - ReaderThread_output_buffer   
+ 06) Setting the output  - DetectorThread   
+ **) Waiting for the buffer to become available - DetectorThread_output_buffer   
+ **) Buffer is available and data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - DetectorThread   
+ 03) Loop resumed  - DetectorThread   
+ 04) Reading the input  - DetectorThread   
+ **) Waiting for refreshed data from - ReaderThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - ReaderThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ **) Buffer is available and data can now be swaped at - ReaderThread_output_buffer   
+ 01) Loop starts  - ReaderThread   
+ 03) Loop resumed  - ReaderThread   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ 06) Setting the output  - ReaderThread   
+ **) Waiting for the buffer to become available - ReaderThread_output_buffer   
+ 06) Setting the output  - DetectorThread   
+ **) Waiting for the buffer to become available - DetectorThread_output_buffer   
+ **) Buffer is available and data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - DetectorThread   
+ 03) Loop resumed  - DetectorThread   
+ 04) Reading the input  - DetectorThread   
+ **) Waiting for refreshed data from - ReaderThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - ReaderThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ **) Buffer is available and data can now be swaped at - ReaderThread_output_buffer   
+ 01) Loop starts  - ReaderThread   
+ 03) Loop resumed  - ReaderThread   
+ 05) Operation completed  - ReaderThread   
+ 06) Setting the output  - ReaderThread   
+ **) Waiting for the buffer to become available - ReaderThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ 06) Setting the output  - DetectorThread   
+ **) Waiting for the buffer to become available - DetectorThread_output_buffer   
+ **) Buffer is available and data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - DetectorThread   
+ 03) Loop resumed  - DetectorThread   
+ 04) Reading the input  - DetectorThread   
+ **) Waiting for refreshed data from - ReaderThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - ReaderThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ **) Buffer is available and data can now be swaped at - ReaderThread_output_buffer   
+ 07) Loop completed  - ReaderThread   
+ **) stop() called  - ReaderThread   
+ **) Request to end and release mutex - ReaderThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ 06) Setting the output  - DetectorThread   
+ **) Waiting for the buffer to become available - DetectorThread_output_buffer   
+ **) Buffer is available and data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - DetectorThread   
+ 03) Loop resumed  - DetectorThread   
+ 04) Reading the input  - DetectorThread   
+ **) Waiting for refreshed data from - ReaderThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - ReaderThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ 06) Setting the output  - DetectorThread   
+ **) Waiting for the buffer to become available - DetectorThread_output_buffer   
+ **) Buffer is available and data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - DetectorThread   
+ 03) Loop resumed  - DetectorThread   
+ 04) Reading the input  - DetectorThread   
+ **) Waiting for refreshed data from - ReaderThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - ReaderThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) stop() called  - DetectorThread   
+ **) Request to end and release mutex - ReaderThread_output_buffer   
+ **) Request to end and release mutex - DetectorThread_output_buffer   
+ **) Waiting for ending  - DetectorThread   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 06) Setting the output  - DetectorThread   
+ **) Waiting for the buffer to become available - DetectorThread_output_buffer   
+ **) Buffer is available and data can now be swaped at - DetectorThread_output_buffer   
+ 07) Loop completed  - DetectorThread   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ 01) Loop starts  - WriterThread   
+ 03) Loop resumed  - WriterThread   
+ 04) Reading the input  - WriterThread   
+ **) Waiting for refreshed data from - DetectorThread_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - DetectorThread_output_buffer   
+ **) stop() called  - WriterThread   
+ **) Request to end and release mutex - DetectorThread_output_buffer   
+ **) Waiting for ending  - WriterThread   
+ 07) Loop completed  - WriterThread   

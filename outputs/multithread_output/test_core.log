@@ -1,0 +1,619 @@
+Running main() from /home/said/Cpp/CppND-Capstone/debug/_deps/gtest-src/googletest/src/gtest_main.cc
+[==========] Running 8 tests from 2 test suites.
+[----------] Global test environment set-up.
+[----------] 4 tests from OperatorTest
+[ RUN      ] OperatorTest.ChechOneOperator
+[ INFO     ] Test of operator 1 int -> float.
+ **) Input reference requested from  - multiply_2.1   
+ **) Output reference requested from  - multiply_2.1   
+ **) Input reference requested from  - multiply_2.1   
+ **) Input reference requested from  - multiply_2.1   
+ **) Output reference requested from  - multiply_2.1   
+ **) Output reference requested from  - multiply_2.1   
+ **) Output reference requested from  - multiply_2.1   
+[       OK ] OperatorTest.ChechOneOperator (0 ms)
+[ RUN      ] OperatorTest.CheckTwoOperators
+[ INFO     ] Test of int -> float -> floor.
+ **) Input reference requested from  - multiply_2.1   
+ **) Output reference requested from  - multiply_2.1   
+ **) Output reference requested from  - multiply_2.1   
+ **) Output reference requested from  - multiply_2.1   
+ **) Input reference requested from  - divide_2.1_floor   
+ **) Output reference requested from  - divide_2.1_floor   
+ **) Input reference requested from  - divide_2.1_floor   
+ **) Output reference requested from  - divide_2.1_floor   
+[       OK ] OperatorTest.CheckTwoOperators (0 ms)
+[ RUN      ] OperatorTest.LinkedTwoOperators
+[ INFO     ] Test of linked operators.
+ **) Input reference requested from  - multiply_2.1   
+ **) Output reference requested from  - multiply_2.1   
+ **) Input pointer to be set for  - divide_2.1_floor   
+ **) Output reference requested from  - divide_2.1_floor   
+ **) Output reference requested from  - multiply_2.1   
+ **) Output reference requested from  - divide_2.1_floor   
+[       OK ] OperatorTest.LinkedTwoOperators (0 ms)
+[ RUN      ] OperatorTest.SourceAndSink
+[ INFO     ] Test of linked operators with source and sink.
+ **) Output reference requested from  - counter_37   
+ **) Input pointer to be set for  - multiply_2.1   
+ **) Output reference requested from  - multiply_2.1   
+ **) Input pointer to be set for  - divide_2.1_floor   
+ **) Input reference requested from  - sink_37   
+ **) Output pointer to be set for  - divide_2.1_floor   
+ **) Output reference requested from  - multiply_2.1   
+ **) Output reference requested from  - divide_2.1_floor   
+[       OK ] OperatorTest.SourceAndSink (0 ms)
+[----------] 4 tests from OperatorTest (0 ms total)
+
+[----------] 4 tests from ExecutionTest
+[ RUN      ] ExecutionTest.OneThreadTest
+[ INFO     ] Test of linked operators run in a thread.
+ **) Output reference requested from  - multiply_3.1   
+ **) Input pointer to be set for  - divide_3_floor   
+ **) The address of input pointer requested from  - multiply_3.1   
+ **) The address of output pointer requested from  - divide_3_floor   
+ **) Starting the thread  - Exec_1   
+ **) Execution mode command sent to - Exec_1   
+ **) Waiting for the buffer to become available - Exec_1_input_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_1_input_buffer   
+ **) Waiting for refreshed data from - Exec_1_output_buffer   
+ 01) Loop starts  - Exec_1   
+ 03) Loop resumed  - Exec_1   
+ 04) Reading the input  - Exec_1   
+ **) Waiting for refreshed data from - Exec_1_input_buffer   
+ **) New data has arrived and now, the data can now be swaped at - Exec_1_input_buffer   
+ 06) Setting the output  - Exec_1   
+ **) Waiting for the buffer to become available - Exec_1_output_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_1_output_buffer   
+ 01) Loop starts  - Exec_1   
+ 03) Loop resumed  - Exec_1   
+ 04) Reading the input  - Exec_1   
+ **) Waiting for refreshed data from - Exec_1_input_buffer   
+ **) New data has arrived and now, the data can now be swaped at - Exec_1_output_buffer   
+ **) Waiting for the buffer to become available - Exec_1_input_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_1_input_buffer   
+ **) Waiting for refreshed data from - Exec_1_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - Exec_1_input_buffer   
+ 06) Setting the output  - Exec_1   
+ **) Waiting for the buffer to become available - Exec_1_output_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_1_output_buffer   
+ 01) Loop starts  - Exec_1   
+ 03) Loop resumed  - Exec_1   
+ 04) Reading the input  - Exec_1   
+ **) Waiting for refreshed data from - Exec_1_input_buffer   
+ **) New data has arrived and now, the data can now be swaped at - Exec_1_output_buffer   
+ **) Execution mode command sent to - Exec_1   
+ **) Waiting for the buffer to become available - Exec_1_input_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_1_input_buffer   
+ **) Waiting for refreshed data from - Exec_1_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - Exec_1_input_buffer   
+ 06) Setting the output  - Exec_1   
+ **) Waiting for the buffer to become available - Exec_1_output_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_1_output_buffer   
+ 01) Loop starts  - Exec_1   
+ 02) Waiting for command  - Exec_1   
+ 03) Loop resumed  - Exec_1   
+ 04) Reading the input  - Exec_1   
+ **) Waiting for refreshed data from - Exec_1_input_buffer   
+ **) New data has arrived and now, the data can now be swaped at - Exec_1_output_buffer   
+ **) Execution mode command sent to - Exec_1   
+ **) Waiting for the buffer to become available - Exec_1_input_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_1_input_buffer   
+ **) Waiting for refreshed data from - Exec_1_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - Exec_1_input_buffer   
+ 06) Setting the output  - Exec_1   
+ **) Waiting for the buffer to become available - Exec_1_output_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_1_output_buffer   
+ 01) Loop starts  - Exec_1   
+ 02) Waiting for command  - Exec_1   
+ 03) Loop resumed  - Exec_1   
+ 04) Reading the input  - Exec_1   
+ **) Waiting for refreshed data from - Exec_1_input_buffer   
+ **) New data has arrived and now, the data can now be swaped at - Exec_1_output_buffer   
+ **) stop() called  - Exec_1   
+ **) Request to end and release mutex - Exec_1_input_buffer   
+ **) Request to end and release mutex - Exec_1_output_buffer   
+ **) Waiting for ending  - Exec_1   
+ **) New data has arrived and now, the data can now be swaped at - Exec_1_input_buffer   
+ 06) Setting the output  - Exec_1   
+ **) Waiting for the buffer to become available - Exec_1_output_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_1_output_buffer   
+ 07) Loop completed  - Exec_1   
+[       OK ] ExecutionTest.OneThreadTest (1 ms)
+[ RUN      ] ExecutionTest.TwoThreadsTest
+[ INFO     ] Test of linked operators run in two threads.
+ **) Output reference requested from  - multiply_3.1   
+ **) Input pointer to be set for  - divide_3_floor   
+ **) The address of input pointer requested from  - multiply_3.1   
+ **) The address of output pointer requested from  - divide_3_floor   
+ **) Output reference requested from  - add_5   
+ **) Input pointer to be set for  - divide_2   
+ **) The address of input pointer requested from  - add_5   
+ **) The address of output pointer requested from  - divide_2   
+ **) Execution mode command sent to - Exec_1   
+ **) Execution mode command sent to - Exec_2   
+ **) Starting the thread  - Exec_1   
+ **) Starting the thread  - Exec_2   
+ 01) Loop starts  - Exec_1   
+ 03) Loop resumed  - Exec_1   
+ 04) Reading the input  - Exec_1   
+ **) Waiting for refreshed data from - Exec_1_input_buffer   
+ 01) Loop starts  - Exec_2   
+ 03) Loop resumed  - Exec_2   
+ 04) Reading the input  - Exec_2   
+ **) Waiting for refreshed data from - Exec_1_output_buffer   
+ **) Waiting for the buffer to become available - Exec_1_input_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_1_input_buffer   
+ **) Waiting for refreshed data from - Exec_2_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - Exec_1_input_buffer   
+ 06) Setting the output  - Exec_1   
+ **) Waiting for the buffer to become available - Exec_1_output_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_1_output_buffer   
+ 01) Loop starts  - Exec_1   
+ 03) Loop resumed  - Exec_1   
+ 04) Reading the input  - Exec_1   
+ **) Waiting for refreshed data from - Exec_1_input_buffer   
+ **) New data has arrived and now, the data can now be swaped at - Exec_1_output_buffer   
+ 06) Setting the output  - Exec_2   
+ **) Waiting for the buffer to become available - Exec_2_output_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_2_output_buffer   
+ 01) Loop starts  - Exec_2   
+ 03) Loop resumed  - Exec_2   
+ 04) Reading the input  - Exec_2   
+ **) Waiting for refreshed data from - Exec_1_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - Exec_2_output_buffer   
+ **) Waiting for the buffer to become available - Exec_1_input_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_1_input_buffer   
+ **) Waiting for refreshed data from - Exec_2_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - Exec_1_input_buffer   
+ 06) Setting the output  - Exec_1   
+ **) Waiting for the buffer to become available - Exec_1_output_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_1_output_buffer   
+ 01) Loop starts  - Exec_1   
+ 03) Loop resumed  - Exec_1   
+ 04) Reading the input  - Exec_1   
+ **) Waiting for refreshed data from - Exec_1_input_buffer   
+ **) New data has arrived and now, the data can now be swaped at - Exec_1_output_buffer   
+ 06) Setting the output  - Exec_2   
+ **) Waiting for the buffer to become available - Exec_2_output_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_2_output_buffer   
+ 01) Loop starts  - Exec_2   
+ 03) Loop resumed  - Exec_2   
+ 04) Reading the input  - Exec_2   
+ **) Waiting for refreshed data from - Exec_1_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - Exec_2_output_buffer   
+ **) stop() called  - Exec_1   
+ **) Request to end and release mutex - Exec_1_input_buffer   
+ **) Request to end and release mutex - Exec_1_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - Exec_1_input_buffer   
+ **) stop() called  - Exec_2   
+ **) Request to end and release mutex - Exec_1_output_buffer   
+ **) Request to end and release mutex - Exec_2_output_buffer   
+ **) Waiting for ending  - Exec_1   
+ 06) Setting the output  - Exec_1   
+ **) Waiting for the buffer to become available - Exec_1_output_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_1_output_buffer   
+ 07) Loop completed  - Exec_1   
+ **) New data has arrived and now, the data can now be swaped at - Exec_1_output_buffer   
+ 06) Setting the output  - Exec_2   
+ **) Waiting for the buffer to become available - Exec_2_output_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_2_output_buffer   
+ 07) Loop completed  - Exec_2   
+ **) Waiting for ending  - Exec_2   
+[       OK ] ExecutionTest.TwoThreadsTest (201 ms)
+[ RUN      ] ExecutionTest.FourThreadsCompleteTest
+[ INFO     ] Test of linked operators run in two threads with souce and sink.
+ **) Output reference requested from  - multiply_3.1   
+ **) Input pointer to be set for  - divide_3_floor   
+ **) The address of input pointer requested from  - multiply_3.1   
+ **) The address of output pointer requested from  - divide_3_floor   
+ **) Output reference requested from  - add_5   
+ **) Input pointer to be set for  - divide_2   
+ **) The address of input pointer requested from  - add_5   
+ **) The address of output pointer requested from  - divide_2   
+ **) The address of output pointer requested from  - counter_37   
+ **) The address of input pointer requested from  - sink_37   
+ **) Execution mode command sent to - Source   
+ **) Execution mode command sent to - Exec_1   
+ **) Execution mode command sent to - Exec_2   
+ **) Execution mode command sent to - Sink   
+ **) Starting the thread  - Source   
+ **) Starting the thread  - Exec_1   
+ 01) Loop starts  - Source   
+ 02) Waiting for command  - Source   
+ 03) Loop resumed  - Source   
+ 06) Setting the output  - Source   
+ **) Waiting for the buffer to become available - Source_output_buffer   
+ **) Buffer is available and data can now be swaped at - Source_output_buffer   
+ 01) Loop starts  - Source   
+ 02) Waiting for command  - Source   
+ **) Starting the thread  - Exec_2   
+ 01) Loop starts  - Exec_1   
+ 03) Loop resumed  - Exec_1   
+ 04) Reading the input  - Exec_1   
+ **) Waiting for refreshed data from - Source_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - Source_output_buffer   
+ 06) Setting the output  - Exec_1   
+ **) Waiting for the buffer to become available - Exec_1_output_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_1_output_buffer   
+ 01) Loop starts  - Exec_1   
+ 03) Loop resumed  - Exec_1   
+ 04) Reading the input  - Exec_1   
+ **) Waiting for refreshed data from - Source_output_buffer   
+ **) Starting the thread  - Sink   
+ 01) Loop starts  - Exec_2   
+ 03) Loop resumed  - Exec_2   
+ 04) Reading the input  - Exec_2   
+ **) Waiting for refreshed data from - Exec_1_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - Exec_1_output_buffer   
+ 06) Setting the output  - Exec_2   
+ **) Waiting for the buffer to become available - Exec_2_output_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_2_output_buffer   
+ 01) Loop starts  - Exec_2   
+ 03) Loop resumed  - Exec_2   
+ 04) Reading the input  - Exec_2   
+ **) Waiting for refreshed data from - Exec_1_output_buffer   
+ 01) Loop starts  - Sink   
+ 03) Loop resumed  - Sink   
+ 04) Reading the input  - Sink   
+ **) Waiting for refreshed data from - Exec_2_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - Exec_2_output_buffer   
+ 01) Loop starts  - Sink   
+ 03) Loop resumed  - Sink   
+ 04) Reading the input  - Sink   
+ **) Waiting for refreshed data from - Exec_2_output_buffer   
+ **) Execution mode command sent to - Source   
+ 03) Loop resumed  - Source   
+ 06) Setting the output  - Source   
+ **) Waiting for the buffer to become available - Source_output_buffer   
+ **) Buffer is available and data can now be swaped at - Source_output_buffer   
+ 01) Loop starts  - Source   
+ 02) Waiting for command  - Source   
+ **) New data has arrived and now, the data can now be swaped at - Source_output_buffer   
+ 06) Setting the output  - Exec_1   
+ **) Waiting for the buffer to become available - Exec_1_output_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_1_output_buffer   
+ 01) Loop starts  - Exec_1   
+ 03) Loop resumed  - Exec_1   
+ 04) Reading the input  - Exec_1   
+ **) Waiting for refreshed data from - Source_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - Exec_1_output_buffer   
+ 06) Setting the output  - Exec_2   
+ **) Waiting for the buffer to become available - Exec_2_output_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_2_output_buffer   
+ 01) Loop starts  - Exec_2   
+ 03) Loop resumed  - Exec_2   
+ **) New data has arrived and now, the data can now be swaped at - Exec_2_output_buffer   
+ 01) Loop starts  - Sink   
+ 03) Loop resumed  - Sink   
+ 04) Reading the input  - Sink   
+ **) Waiting for refreshed data from - Exec_2_output_buffer   
+ 04) Reading the input  - Exec_2   
+ **) Waiting for refreshed data from - Exec_1_output_buffer   
+ **) Execution mode command sent to - Source   
+ 03) Loop resumed  - Source   
+ 06) Setting the output  - Source   
+ **) Waiting for the buffer to become available - Source_output_buffer   
+ **) Buffer is available and data can now be swaped at - Source_output_buffer   
+ 01) Loop starts  - Source   
+ 02) Waiting for command  - Source   
+ **) New data has arrived and now, the data can now be swaped at - Source_output_buffer   
+ 06) Setting the output  - Exec_1   
+ **) Waiting for the buffer to become available - Exec_1_output_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_1_output_buffer   
+ 01) Loop starts  - Exec_1   
+ 03) Loop resumed  - Exec_1   
+ 04) Reading the input  - Exec_1   
+ **) Waiting for refreshed data from - Source_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - Exec_1_output_buffer   
+ 06) Setting the output  - Exec_2   
+ **) Waiting for the buffer to become available - Exec_2_output_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_2_output_buffer   
+ 01) Loop starts  - Exec_2   
+ 03) Loop resumed  - Exec_2   
+ 04) Reading the input  - Exec_2   
+ **) Waiting for refreshed data from - Exec_1_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - Exec_2_output_buffer   
+ 01) Loop starts  - Sink   
+ 03) Loop resumed  - Sink   
+ 04) Reading the input  - Sink   
+ **) Waiting for refreshed data from - Exec_2_output_buffer   
+ **) Execution mode command sent to - Source   
+ 03) Loop resumed  - Source   
+ 06) Setting the output  - Source   
+ **) Waiting for the buffer to become available - Source_output_buffer   
+ **) Buffer is available and data can now be swaped at - Source_output_buffer   
+ 01) Loop starts  - Source   
+ 02) Waiting for command  - Source   
+ **) New data has arrived and now, the data can now be swaped at - Source_output_buffer   
+ 06) Setting the output  - Exec_1   
+ **) Waiting for the buffer to become available - Exec_1_output_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_1_output_buffer   
+ 01) Loop starts  - Exec_1   
+ 03) Loop resumed  - Exec_1   
+ 04) Reading the input  - Exec_1   
+ **) Waiting for refreshed data from - Source_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - Exec_1_output_buffer   
+ 06) Setting the output  - Exec_2   
+ **) Waiting for the buffer to become available - Exec_2_output_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_2_output_buffer   
+ 01) Loop starts  - Exec_2   
+ 03) Loop resumed  - Exec_2   
+ 04) Reading the input  - Exec_2   
+ **) Waiting for refreshed data from - Exec_1_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - Exec_2_output_buffer   
+ 01) Loop starts  - Sink   
+ 03) Loop resumed  - Sink   
+ 04) Reading the input  - Sink   
+ **) Waiting for refreshed data from - Exec_2_output_buffer   
+ **) stop() called  - Source   
+ **) Request to end and release mutex - Source_output_buffer   
+ 03) Loop resumed  - Source   
+ 07) Loop completed  - Source   
+ **) stop() called  - Exec_1   
+ **) Request to end and release mutex - Source_output_buffer   
+ **) Request to end and release mutex - Exec_1_output_buffer   
+ **) stop() called  - Exec_2   
+ **) Request to end and release mutex - Exec_1_output_buffer   
+ **) Request to end and release mutex - Exec_2_output_buffer   
+ **) stop() called  - Sink   
+ **) Request to end and release mutex - Exec_2_output_buffer   
+ **) Waiting for ending  - Exec_1   
+ **) New data has arrived and now, the data can now be swaped at - Source_output_buffer   
+ 06) Setting the output  - Exec_1   
+ **) Waiting for the buffer to become available - Exec_1_output_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_1_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - Exec_2_output_buffer   
+ 07) Loop completed  - Sink   
+ 07) Loop completed  - Exec_1   
+ **) New data has arrived and now, the data can now be swaped at - Exec_1_output_buffer   
+ **) Waiting for ending  - Exec_2   
+ 06) Setting the output  - Exec_2   
+ **) Waiting for the buffer to become available - Exec_2_output_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_2_output_buffer   
+ 07) Loop completed  - Exec_2   
+ **) Waiting for ending  - Source   
+ **) Waiting for ending  - Sink   
+[       OK ] ExecutionTest.FourThreadsCompleteTest (503 ms)
+[ RUN      ] ExecutionTest.FourThreadsCompleteTestRun5times
+[ INFO     ] Test of linked operators run in two threads with souce and sink should run 5 times only.
+ **) Output reference requested from  - multiply_3.1   
+ **) Input pointer to be set for  - divide_3_floor   
+ **) The address of input pointer requested from  - multiply_3.1   
+ **) The address of output pointer requested from  - divide_3_floor   
+ **) Output reference requested from  - add_5   
+ **) Input pointer to be set for  - divide_2   
+ **) The address of input pointer requested from  - add_5   
+ **) The address of output pointer requested from  - divide_2   
+ **) The address of output pointer requested from  - counter_37   
+ **) The address of input pointer requested from  - sink_37   
+ **) Execution mode command sent to - Source   
+ **) Execution mode command sent to - Exec_1   
+ **) Execution mode command sent to - Exec_2   
+ **) Execution mode command sent to - Sink   
+ **) Starting the thread  - Source   
+ **) Starting the thread  - Exec_1   
+ 01) Loop starts  - Source   
+ 02) Waiting for command  - Source   
+ 03) Loop resumed  - Source   
+ 06) Setting the output  - Source   
+ **) Waiting for the buffer to become available - Source_output_buffer   
+ **) Buffer is available and data can now be swaped at - Source_output_buffer   
+ 01) Loop starts  - Source   
+ 02) Waiting for command  - Source   
+ **) Starting the thread  - Exec_2   
+ 01) Loop starts  - Exec_1   
+ 03) Loop resumed  - Exec_1   
+ 04) Reading the input  - Exec_1   
+ **) Waiting for refreshed data from - Source_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - Source_output_buffer   
+ **) Starting the thread  - Sink   
+ 06) Setting the output  - Exec_1   
+ **) Waiting for the buffer to become available - Exec_1_output_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_1_output_buffer   
+ 01) Loop starts  - Exec_1   
+ 03) Loop resumed  - Exec_1   
+ 04) Reading the input  - Exec_1   
+ **) Waiting for refreshed data from - Source_output_buffer   
+ 01) Loop starts  - Exec_2   
+ 03) Loop resumed  - Exec_2   
+ 04) Reading the input  - Exec_2   
+ **) Waiting for refreshed data from - Exec_1_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - Exec_1_output_buffer   
+ 06) Setting the output  - Exec_2   
+ **) Waiting for the buffer to become available - Exec_2_output_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_2_output_buffer   
+ 01) Loop starts  - Exec_2   
+ 03) Loop resumed  - Exec_2   
+ 04) Reading the input  - Exec_2   
+ **) Waiting for refreshed data from - Exec_1_output_buffer   
+ 01) Loop starts  - Sink   
+ 03) Loop resumed  - Sink   
+ 04) Reading the input  - Sink   
+ **) Waiting for refreshed data from - Exec_2_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - Exec_2_output_buffer   
+ 01) Loop starts  - Sink   
+ 03) Loop resumed  - Sink   
+ 04) Reading the input  - Sink   
+ **) Waiting for refreshed data from - Exec_2_output_buffer   
+ **) Execution mode command sent to - Source   
+ 03) Loop resumed  - Source   
+ 06) Setting the output  - Source   
+ **) Waiting for the buffer to become available - Source_output_buffer   
+ **) Buffer is available and data can now be swaped at - Source_output_buffer   
+ 01) Loop starts  - Source   
+ 02) Waiting for command  - Source   
+ **) New data has arrived and now, the data can now be swaped at - Source_output_buffer   
+ 06) Setting the output  - Exec_1   
+ **) Waiting for the buffer to become available - Exec_1_output_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_1_output_buffer   
+ 01) Loop starts  - Exec_1   
+ 03) Loop resumed  - Exec_1   
+ 04) Reading the input  - Exec_1   
+ **) Waiting for refreshed data from - Source_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - Exec_1_output_buffer   
+ 06) Setting the output  - Exec_2   
+ **) Waiting for the buffer to become available - Exec_2_output_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_2_output_buffer   
+ 01) Loop starts  - Exec_2   
+ 03) Loop resumed  - Exec_2   
+ 04) Reading the input  - Exec_2   
+ **) Waiting for refreshed data from - Exec_1_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - Exec_2_output_buffer   
+ 01) Loop starts  - Sink   
+ 03) Loop resumed  - Sink   
+ 04) Reading the input  - Sink   
+ **) Waiting for refreshed data from - Exec_2_output_buffer   
+ **) Execution mode command sent to - Source   
+ 03) Loop resumed  - Source   
+ 06) Setting the output  - Source   
+ **) Waiting for the buffer to become available - Source_output_buffer   
+ **) Buffer is available and data can now be swaped at - Source_output_buffer   
+ 01) Loop starts  - Source   
+ 02) Waiting for command  - Source   
+ **) New data has arrived and now, the data can now be swaped at - Source_output_buffer   
+ 06) Setting the output  - Exec_1   
+ **) Waiting for the buffer to become available - Exec_1_output_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_1_output_buffer   
+ 01) Loop starts  - Exec_1   
+ 03) Loop resumed  - Exec_1   
+ 04) Reading the input  - Exec_1   
+ **) Waiting for refreshed data from - Source_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - Exec_1_output_buffer   
+ 06) Setting the output  - Exec_2   
+ **) Waiting for the buffer to become available - Exec_2_output_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_2_output_buffer   
+ 01) Loop starts  - Exec_2   
+ 03) Loop resumed  - Exec_2   
+ 04) Reading the input  - Exec_2   
+ **) Waiting for refreshed data from - Exec_1_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - Exec_2_output_buffer   
+ 01) Loop starts  - Sink   
+ 03) Loop resumed  - Sink   
+ 04) Reading the input  - Sink   
+ **) Waiting for refreshed data from - Exec_2_output_buffer   
+ **) Execution mode command sent to - Source   
+ 03) Loop resumed  - Source   
+ 06) Setting the output  - Source   
+ **) Waiting for the buffer to become available - Source_output_buffer   
+ **) Buffer is available and data can now be swaped at - Source_output_buffer   
+ 01) Loop starts  - Source   
+ 02) Waiting for command  - Source   
+ **) New data has arrived and now, the data can now be swaped at - Source_output_buffer   
+ 06) Setting the output  - Exec_1   
+ **) Waiting for the buffer to become available - Exec_1_output_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_1_output_buffer   
+ 01) Loop starts  - Exec_1   
+ 03) Loop resumed  - Exec_1   
+ 04) Reading the input  - Exec_1   
+ **) Waiting for refreshed data from - Source_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - Exec_1_output_buffer   
+ 06) Setting the output  - Exec_2   
+ **) Waiting for the buffer to become available - Exec_2_output_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_2_output_buffer   
+ 01) Loop starts  - Exec_2   
+ 03) Loop resumed  - Exec_2   
+ 04) Reading the input  - Exec_2   
+ **) Waiting for refreshed data from - Exec_1_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - Exec_2_output_buffer   
+ 01) Loop starts  - Sink   
+ 03) Loop resumed  - Sink   
+ 04) Reading the input  - Sink   
+ **) Waiting for refreshed data from - Exec_2_output_buffer   
+ **) Execution mode command sent to - Source   
+ 03) Loop resumed  - Source   
+ 06) Setting the output  - Source   
+ **) Waiting for the buffer to become available - Source_output_buffer   
+ **) Buffer is available and data can now be swaped at - Source_output_buffer   
+ 01) Loop starts  - Source   
+ 02) Waiting for command  - Source   
+ **) New data has arrived and now, the data can now be swaped at - Source_output_buffer   
+ 06) Setting the output  - Exec_1   
+ **) Waiting for the buffer to become available - Exec_1_output_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_1_output_buffer   
+ 01) Loop starts  - Exec_1   
+ 03) Loop resumed  - Exec_1   
+ 04) Reading the input  - Exec_1   
+ **) Waiting for refreshed data from - Source_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - Exec_1_output_buffer   
+ 06) Setting the output  - Exec_2   
+ **) Waiting for the buffer to become available - Exec_2_output_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_2_output_buffer   
+ 01) Loop starts  - Exec_2   
+ 03) Loop resumed  - Exec_2   
+ 04) Reading the input  - Exec_2   
+ **) Waiting for refreshed data from - Exec_1_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - Exec_2_output_buffer   
+ 01) Loop starts  - Sink   
+ 03) Loop resumed  - Sink   
+ 04) Reading the input  - Sink   
+ **) Waiting for refreshed data from - Exec_2_output_buffer   
+ **) Execution mode command sent to - Source   
+ 03) Loop resumed  - Source   
+ 05) Operation completed  - Source   
+ 06) Setting the output  - Source   
+ **) Waiting for the buffer to become available - Source_output_buffer   
+ **) Buffer is available and data can now be swaped at - Source_output_buffer   
+ 07) Loop completed  - Source   
+ **) New data has arrived and now, the data can now be swaped at - Source_output_buffer   
+ 06) Setting the output  - Exec_1   
+ **) Waiting for the buffer to become available - Exec_1_output_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_1_output_buffer   
+ 01) Loop starts  - Exec_1   
+ 03) Loop resumed  - Exec_1   
+ 04) Reading the input  - Exec_1   
+ **) Waiting for refreshed data from - Source_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - Exec_1_output_buffer   
+ 06) Setting the output  - Exec_2   
+ **) Waiting for the buffer to become available - Exec_2_output_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_2_output_buffer   
+ 01) Loop starts  - Exec_2   
+ 03) Loop resumed  - Exec_2   
+ 04) Reading the input  - Exec_2   
+ **) Waiting for refreshed data from - Exec_1_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - Exec_2_output_buffer   
+ 01) Loop starts  - Sink   
+ 03) Loop resumed  - Sink   
+ 04) Reading the input  - Sink   
+ **) Waiting for refreshed data from - Exec_2_output_buffer   
+[ INFO     ] All results obtained.
+ **) stop() called  - Sink   
+ **) Request to end and release mutex - Exec_2_output_buffer   
+ **) stop() called  - Exec_2   
+ **) Request to end and release mutex - Exec_1_output_buffer   
+ **) Request to end and release mutex - Exec_2_output_buffer   
+ **) stop() called  - Exec_1   
+ **) Request to end and release mutex - Source_output_buffer   
+ **) New data has arrived and now, the data can now be swaped at - Exec_2_output_buffer   
+ 07) Loop completed  - Sink   
+ **) Request to end and release mutex - Exec_1_output_buffer   
+ **) stop() called  - Source   
+ **) Request to end and release mutex - Source_output_buffer   
+[ INFO     ] Wait for Source to end .
+ **) Waiting for ending  - Source   
+[ INFO     ] Source ended.
+[ INFO     ] Wait for Exec1 to end.
+ **) Waiting for ending  - Exec_1   
+ **) New data has arrived and now, the data can now be swaped at - Exec_1_output_buffer   
+ 06) Setting the output  - Exec_2   
+ **) Waiting for the buffer to become available - Exec_2_output_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_2_output_buffer   
+ 07) Loop completed  - Exec_2   
+ **) New data has arrived and now, the data can now be swaped at - Source_output_buffer   
+ 06) Setting the output  - Exec_1   
+ **) Waiting for the buffer to become available - Exec_1_output_buffer   
+ **) Buffer is available and data can now be swaped at - Exec_1_output_buffer   
+ 07) Loop completed  - Exec_1   
+[ INFO     ] Exec1 ended.
+[ INFO     ] Wait for Exec2 to end.
+ **) Waiting for ending  - Exec_2   
+[ INFO     ] Exec2 ended.
+[ INFO     ] Wait for Sink to end.
+ **) Waiting for ending  - Sink   
+[ INFO     ] Sink ended.
+[       OK ] ExecutionTest.FourThreadsCompleteTestRun5times (704 ms)
+[----------] 4 tests from ExecutionTest (1411 ms total)
+
+[----------] Global test environment tear-down
+[==========] 8 tests from 2 test suites ran. (1412 ms total)
+[  PASSED  ] 8 tests.
