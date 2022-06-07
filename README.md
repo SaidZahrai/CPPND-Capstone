@@ -146,7 +146,7 @@ Concurrancy is the core of the project and different aspects are accounted for. 
 # How to run the program
 Firstly, I need to inform that the code has been tested on WSL2/Ubuntu 20.4. I tried to make the camera work, but failed. That is the reason I have changed the code to reading from files and writing on files.
 
-On my computer, I had opencv from earlier projects, so I was good. If you do not have it, you need to install version 4.1. Other than that, I use `filesystem` so you need to have the tool chaon for C++ 17.
+On my computer, I had opencv from earlier projects, so I was good. If you do not have it, you need to install version 4.1 or newer. I had 4.5.5 at the time of testing. Other than that, I use `filesystem` so you need to have the tool chain for C++ 17.
 
 Other than that, I guess the process is the standard one as follows:
 
