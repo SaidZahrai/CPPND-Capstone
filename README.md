@@ -158,7 +158,7 @@ $ cd release/
 $ cmake -DCMAKE_BUILD_TYPE=RELEASE ..
 $ make
 ```
-It compiles and creates three executables: `cascade_classifier_multithread`  `cascade_classifier_singlethread`  and `test_core`.
+It compiles and creates three executables in release/bin/ directory: `cascade_classifier_multithread`  `cascade_classifier_singlethread`  and `test_core`.
 
 `test_core` is the test cases mentioned above. If you run it, you should have the below output. Stay in `release` directory and run
 
@@ -213,7 +213,7 @@ Running main() from /home/said/CppND-Capstone/release/_deps/gtest-src/googletest
 [  PASSED  ] 8 tests.
 ```
 
-`cascade_classifier_singlethread` is the single threaded classifier, which reads files and tries to find faces and eyes. You can run it by typing
+`cascade_classifier_singlethread` is the single threaded classifier, which reads files and tries to find faces and eyes. You can run it by typing the below command
 
 ```console
 ./bin/cascade_classifier_singlethread ../input_files
