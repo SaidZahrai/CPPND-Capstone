@@ -160,9 +160,13 @@ $ make
 ```
 It compiles and creates three executables: `cascade_classifier_multithread`  `cascade_classifier_singlethread`  and `test_core`.
 
-`test_core` is the test cases mentioned above. If you run it, you should have the below output:
+`test_core` is the test cases mentioned above. If you run it, you should have the below output. Stay in `release` directory and run
 
 ```console
+
+```console
+$ ./bin/test_core
+Running main() from /home/said/CppND-Capstone/release/_deps/gtest-src/googletest/src/gtest_main.cc
 [==========] Running 8 tests from 2 test suites.
 [----------] Global test environment set-up.
 [----------] 4 tests from OperatorTest
@@ -212,13 +216,13 @@ It compiles and creates three executables: `cascade_classifier_multithread`  `ca
 `cascade_classifier_singlethread` is the single threaded classifier, which reads files and tries to find faces and eyes. You can run it by typing
 
 ```console
-cascade_classifier_singlethread ../input_files
+./bin/cascade_classifier_singlethread ../input_files
 ```
 Pay attention to the information that is shared. The program will read image files from `../input_files/`, process them and put them in `./your_last_processed_images_singlethread/`
 
 Equally, you can run
 ```console
-$ bin/cascade_classifier_multithread ../input_files
+$ ./bin/cascade_classifier_multithread ../input_files
 ```
 which will lokk exactly the same, but the output will be in `your_last_processed_images_multithread`. The output from the two programs should be exactly the same. I have not tried to improve the training, so it is just what it is. Here, for example an eye is missed.
 
@@ -239,6 +243,8 @@ $ cd debug/
 $ cmake -DCMAKE_BUILD_TYPE=DEBUG ..
 $ make
 ```
+
+An example output for the above steps can be found in `CppND-Capstone/outputs/clone_build_run.pdf`..
 
 # Memory leakage
 I have run the code with `valgrind` and the results are in `outputs/multithread_output/test_core_valgrind.log`. You will find that there are no leakages and everything is handled properly.
