@@ -108,7 +108,6 @@ namespace parallelOperators
             cout << " **) stop() called  - " << _tname << "   \n";
 #endif
             _ending.store(true);
-            _mutex.unlock();
             _condition.notify_all();    
             _terminateInputOutput();
         }
