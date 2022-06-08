@@ -74,7 +74,6 @@ namespace parallelOperators
             cout << " **) Request to end and release mutex - " << _bname << "   \n";
 #endif
             _ending = true;
-            _mutex.unlock();
             _condition.notify_all();
         }
 
